@@ -1,7 +1,7 @@
 FROM alpine
 
 ENV TZ="America/Denver" \
-    LANG="C.UTF-8" \
+    LANG="C.UTF-8"
 
 RUN apk add bash && \
     apk add iputils && \
@@ -25,4 +25,3 @@ RUN apk add bash && \
         # libattr
         # libacl
         # popt
-        
