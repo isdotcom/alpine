@@ -3,7 +3,8 @@ FROM alpine
 ENV TZ="America/Denver" \
     LANG="C.UTF-8"
 
-RUN apk add bash && \
+RUN apk update && \
+    apk add bash && \
     apk add iputils && \
         # libcap
     apk add htop && \
